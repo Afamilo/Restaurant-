@@ -1,11 +1,10 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-    entry: {
-        boundle:path.resolve(__dirname, 'src/index.js'),
-    },
+    entry:  './src/index.js',
+    
         output: {
             path: path.resolve(__dirname, 'dist'),
-            Filename: '[name].js',
+            filename: 'main.js',
         }
 }
