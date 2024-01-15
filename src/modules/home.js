@@ -14,7 +14,20 @@ function createAboutSection() {
     'Kitchen Repblic has the best food from the all whiled world';
 
     about.appendChild(para);
+
     return about;
+}
+
+function loadHome() {
+    const content = document.getElementById('tab-content');
+
+    content.textContent = '';
+
+    const aboutSection = createAboutSection();
+
+    setBtnActive('home');
+
+    content.appendChild(aboutSection);
 }
 
 export default loadHome;
