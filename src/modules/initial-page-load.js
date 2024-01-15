@@ -15,3 +15,17 @@ function createBtn(id, text) {
     btn.appendChild(span);
     return btn;
 }
+
+function createNav(id) {
+    const nav = document.createElement('nav');
+    nav.setAttribute('id', id);
+
+    const homeBtn = createBtn('home', 'home');
+    const menuBtn = createBtn('menu', 'menu');
+    const contactBtn = createBtn('contact', 'contact');
+
+    nav.appendChild(homeBtn);
+    nav.appendChild(menuBtn);
+    nav.appendChild(contactBtn);
+    return nav;
+}
