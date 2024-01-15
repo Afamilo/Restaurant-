@@ -38,3 +38,21 @@ function createFooter(id, text) {
     footer.appendChild(h3);
     return footer;
 }
+
+function loadPage() {
+    const content = document.getElementById('content');
+    //header
+    const header = createHeader('header', 'star food');
+    content.appendChild(header);
+    //nav
+    const nav = createNav('nav');
+    content.appendChild(nav);
+    //tab-content
+    const tabcontent = createMain('tab-content');
+    content.appendChild(tabcontent);
+    //footer
+    const footer = createFooter('footer', 'Made by Martins');
+    content.appendChild(footer);
+}
+
+export default loadPage;
