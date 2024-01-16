@@ -29,12 +29,3 @@ function createNav(id) {
     nav.appendChild(contactBtn);
     return nav;
 }
-
-function createFooter(id, text) {
-    const footer = document.createElement('footer');
-    footer.setAttribute('id',id);
-    const h3 = document.createElement('h3');
-    h3.textContent = text;
-    footer.appendChild(h3);
-    return footer;
-}
